@@ -15,4 +15,5 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 1.5em;
+    border-bottom: 1px solid lightgray;
 }
