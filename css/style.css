@@ -31,3 +31,8 @@ body{
     font-size: 1.2em;
     color: #848484;
 }
+
+#reset:hover{
+    color: #484848;
+    cursor: pointer;
+}
