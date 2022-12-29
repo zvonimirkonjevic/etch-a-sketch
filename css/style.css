@@ -16,6 +16,7 @@ body{
     align-items: center;
     padding: 1.5em;
     border-bottom: 1px solid lightgray;
+    letter-spacing: -0.05em;
 }
 
 .header-logo{
@@ -24,4 +25,9 @@ body{
     gap: 1em;
     font-size: 1.2em;
     color: #484848;
+}
+
+.header-item{
+    font-size: 1.2em;
+    color: #848484;
 }
