@@ -17,3 +17,11 @@ body{
     padding: 1.5em;
     border-bottom: 1px solid lightgray;
 }
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    color: #484848;
+}
