@@ -3,6 +3,12 @@
     src: url(/fonts/GorditaBold.otf);
 }
 
+:root{
+    --grid-rows: 1;
+    --grid-cols: 1;
+    --grid-size: 1;
+}
+
 body{
     margin: 0;
     padding: 0;
