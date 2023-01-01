@@ -8,6 +8,8 @@ body{
     padding: 0;
     font-family: 'GorditaBold';
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-container{
