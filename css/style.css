@@ -17,7 +17,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 1.5em;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
     letter-spacing: -0.05em;
 }
 
@@ -37,9 +37,4 @@ body{
 #reset:hover{
     color: #484848;
     cursor: pointer;
-}
-
-.container{
-    height: 100vh;
-    width: 100vw;
 }
