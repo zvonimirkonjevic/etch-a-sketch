@@ -50,4 +50,5 @@ body{
     grid-template-rows: repeat(var(--grid-rows), var(--grid-size));
     grid-template-columns: repeat(var(--grid-cols), var(--grid-size));
     height: 100vh;
+    align-self: center;
 }
