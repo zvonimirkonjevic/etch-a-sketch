@@ -38,3 +38,8 @@ body{
     color: #484848;
     cursor: pointer;
 }
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
