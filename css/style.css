@@ -48,6 +48,9 @@ body{
 .header-input{
     display: flex;
     align-items: center;
+    font-size: 1.2em;
+    gap: 0.5em;
+    color: #848484;
 }
 
 .container{
