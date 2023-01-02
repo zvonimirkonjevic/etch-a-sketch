@@ -1,5 +1,6 @@
 let container = document.querySelector('.container');
 let reset = document.querySelector('#reset');
+let input = document.querySelector('#input');
 
 let uiHeight = container.offsetHeight;
 
@@ -26,15 +27,16 @@ function drawOnHover(){
 }
 
 function resetGrid() {
-    let squareGrid = document.querySelectorAll('.grid-item');
-    for(let i = 0; i < squareGrid.length; i++){
-        squareGrid[i].style.backgroundColor = "white";
-        squareGrid[i].style.borderColor ="#ededed";
-    }
+    reset.addEventListener('click', () => {
+        let squareGrid = document.querySelectorAll('.grid-item');
+        for(let i = 0; i < squareGrid.length; i++){
+            squareGrid[i].style.backgroundColor = "white";
+            squareGrid[i].style.borderColor ="#ededed";
+        }
+    });
 }
+
 
 createGrid(16);
 drawOnHover();
-reset.addEventListener("click", () => {
-    resetGrid();
-});
+resetGrid();
