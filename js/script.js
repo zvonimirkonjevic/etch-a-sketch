@@ -14,4 +14,15 @@ function createGrid(dimension){
     }
 }
 
+function drawOnHover(){
+    let squareGrid = document.querySelectorAll('.grid-item');
+    for(let i = 0; i < squareGrid.length; i++){
+        squareGrid[i].addEventListener('mouseenter', () => {
+            squareGrid[i].style.backgroundColor = "#484848";
+            squareGrid[i].style.borderColor = "#484848";
+        });
+    }
+}
+
 createGrid(16);
+drawOnHover();
