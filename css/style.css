@@ -56,7 +56,11 @@ body{
 #grid-size{
     border: none;
     border-bottom: 2px solid #848484;
-    width: 3em;
+    width: 2.5em;
+    font-size: 1em;
+    font-family: 'GorditaBold';
+    text-align: center;
+    color: #848484;
 }
 
 #grid-size:focus{
