@@ -21,6 +21,7 @@ function drawOnHover(){
     for(let i = 0; i < squareGrid.length; i++){
         squareGrid[i].addEventListener('mouseenter', () => {
             squareGrid[i].style.backgroundColor = "#484848";
+            squareGrid[i].style.transition = "all 125ms linear";
             squareGrid[i].style.borderColor = "#484848";
         });
     }
