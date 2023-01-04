@@ -48,7 +48,11 @@ function updateGrid(){
     });
 }
 
-createGrid(value);
-updateGrid();
-drawOnHover();
-resetGrid();
+function etchASketch(){
+    createGrid(value);
+    updateGrid();
+    drawOnHover();
+    resetGrid();
+}
+
+etchASketch();
