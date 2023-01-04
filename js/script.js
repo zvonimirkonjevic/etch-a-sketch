@@ -1,7 +1,7 @@
 let container = document.querySelector('.container');
 let reset = document.querySelector('#reset');
 let input = document.querySelector('#input');
-
+let value = parseInt(document.getElementById('grid-size').value);
 let uiHeight = container.offsetHeight;
 
 function createGrid(dimension){
@@ -37,7 +37,18 @@ function resetGrid() {
     });
 }
 
+function updateGrid(){
+    input.addEventListener('click', () => {
+        value = parseInt(document.getElementById('grid-size').value);
+        if(value <= 100 && value > 1){
+            createGrid(value);
+            drawOnHover();
+            resetGrid();
+        }
+    });
+}
 
-createGrid(16);
+createGrid(value);
+updateGrid();
 drawOnHover();
 resetGrid();
