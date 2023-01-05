@@ -31,9 +31,9 @@ function drawOnHover(){
                 squareGrid[i].style.cursor = "pointer";
             }
             else{
-                squareGrid[i].style.backgroundColor = "#484848";
+                squareGrid[i].style.backgroundColor = "var(--square-color)";
                 squareGrid[i].style.transition = "all 125ms linear";
-                squareGrid[i].style.borderColor = "#484848";
+                squareGrid[i].style.borderColor = "var(--square-color)";
             }
         });
     }
