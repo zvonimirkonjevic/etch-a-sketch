@@ -1,5 +1,7 @@
 let container = document.querySelector('.container');
+
 let reset = document.querySelector('#reset');
+
 let input = document.querySelector('#input');
 let value = parseInt(document.getElementById('grid-size').value);
 let uiHeight = container.offsetHeight;
