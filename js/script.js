@@ -6,7 +6,6 @@ let sizeInput = document.querySelector('#size-input');
 let sizeValue = parseInt(document.getElementById('grid-size').value);
 let uiHeight = container.offsetHeight;
 
-let colorValue = document.getElementById('square-color').value;
 let colorInput = document.querySelector('#color-input');
 
 function createGrid(dimension){
@@ -71,10 +70,17 @@ function updateGrid(){
     });
 }
 
+function changeColor(){
+    colorInput.addEventListener("click", () => {
+        document.documentElement.style.setProperty('--square-color', document.getElementById('square-color').value);
+    });
+}
+
 function etchASketch(){
     createGrid(sizeValue);
     updateGrid();
     drawOnHover();
+    changeColor();
     resetGrid();
 }
 
