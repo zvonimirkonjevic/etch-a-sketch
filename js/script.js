@@ -37,10 +37,18 @@ function resetGrid() {
     });
 }
 
+function removeGrid(){
+    let squareGrid = document.querySelectorAll('.grid-item');
+    for(let i = 0; i < squareGrid.length; i++){
+        container.removeChild(squareGrid[i]);
+    }
+}
+
 function updateGrid(){
     input.addEventListener('click', () => {
         value = parseInt(document.getElementById('grid-size').value);
         if(value <= 100 && value > 1){
+            removeGrid();
             createGrid(value);
             drawOnHover();
             resetGrid();
