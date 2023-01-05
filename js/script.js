@@ -6,6 +6,9 @@ let sizeInput = document.querySelector('#size-input');
 let sizeValue = parseInt(document.getElementById('grid-size').value);
 let uiHeight = container.offsetHeight;
 
+let colorValue = document.getElementById('square-color').value;
+let colorInput = document.querySelector('#color-input');
+
 function createGrid(dimension){
     let squareEdge = uiHeight / dimension;
     container.style.setProperty('--grid-rows', dimension);
