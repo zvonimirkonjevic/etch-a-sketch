@@ -2,8 +2,8 @@ let container = document.querySelector('.container');
 
 let reset = document.querySelector('#reset');
 
-let input = document.querySelector('#input');
-let value = parseInt(document.getElementById('grid-size').value);
+let sizeInput = document.querySelector('#size-input');
+let sizeValue = parseInt(document.getElementById('grid-size').value);
 let uiHeight = container.offsetHeight;
 
 function createGrid(dimension){
@@ -57,11 +57,11 @@ function removeGrid(){
 }
 
 function updateGrid(){
-    input.addEventListener('click', () => {
-        value = parseInt(document.getElementById('grid-size').value);
-        if(value <= 100 && value > 1){
+    sizeInput.addEventListener('click', () => {
+        sizeValue = parseInt(document.getElementById('grid-size').value);
+        if(sizeValue <= 100 && sizeValue > 1){
             removeGrid();
-            createGrid(value);
+            createGrid(sizeValue);
             drawOnHover();
             resetGrid();
         }
@@ -69,7 +69,7 @@ function updateGrid(){
 }
 
 function etchASketch(){
-    createGrid(value);
+    createGrid(sizeValue);
     updateGrid();
     drawOnHover();
     resetGrid();

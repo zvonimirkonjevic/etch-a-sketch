@@ -54,7 +54,7 @@ body{
     color: #848484;
 }
 
-#input:hover{
+#size-input:hover{
     cursor: pointer;
     color: #484848;
 }
@@ -73,7 +73,7 @@ body{
     outline: none;
 }
 
-#color:hover{
+#color-input:hover{
     cursor: pointer;
     color: #484848;
 }
